@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Exchange Rate App</string>
+    <string name="ultima_actualizacion">Última actualización</string>
+    <string name="moneda_base">MXN: $ 1.00</string>
+    <string name="moneda_southkorea">KRW: ₩ </string>
+    <string name="moneda_colombia">COP: $ </string>
+    <string name="moneda_brasil">BRL: R$ </string>
+    <string name="moneda_japon">JPY: ¥ </string>
+    <string name="moneda_canada">CAD: C$ </string>
+    <string name="moneda_suiza">CHF: SFr </string>
+    <string name="moneda_noruega">NOK: NOK </string>
+    <string name="moneda_suecia">SEK: SEK </string>
+    <string name="moneda_singapur">SGD: S$ </string>
+
+</resources>

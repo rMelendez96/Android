@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/fondo"
+
+    >
+
+    <TextView
+        android:id="@+id/textUltimActualizacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/ultima_actualizacion"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/textActualizacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+
+        android:text="@string/ultima_actualizacion"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textUltimActualizacion" />
+
+    <TextView
+        android:id="@+id/textMonedaBase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+
+        android:text="@string/moneda_base"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textActualizacion" />
+
+    <SeekBar
+        android:id="@+id/cambioBarra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_marginTop="36dp"
+        android:max="50000"
+        android:min="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textMonedaBase"
+        android:thumbTint="@color/primaryLightColor"/>
+
+    <TextView
+        android:id="@+id/textMonedaColombia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/moneda_colombia"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textMonedaBase"
+        />
+
+
+    <ImageView
+        android:layout_width="34dp"
+        android:layout_height="31dp"
+        android:src="@drawable/colombiaflag"
+        app:layout_constraintEnd_toStartOf="@+id/textMonedaColombia"
+        app:layout_constraintHorizontal_bias="0.911"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textMonedaColombia" />
+
+    <TextView
+        android:id="@+id/textMonedaBrasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/moneda_brasil"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textMonedaColombia"
+        />
+
+    <ImageView
+        android:layout_width="34dp"
+        android:layout_height="31dp"
+        android:src="@drawable/brazilflag"
+        app:layout_constraintEnd_toStartOf="@+id/textMonedaBrasil"
+        app:layout_constraintHorizontal_bias="0.911"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textMonedaBrasil" />
+
+    <TextView
+        android:id="@+id/textMonedaKorea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/moneda_southkorea"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textMonedaBrasil"
+        />
+
+    <ImageView
+        android:layout_width="34dp"
+        android:layout_height="31dp"
+        android:src="@drawable/southkoreaflag"
+        app:layout_constraintEnd_toStartOf="@+id/textMonedaKorea"
+        app:layout_constraintHorizontal_bias="0.911"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textMonedaKorea" />
+
+    <TextView
+        android:id="@+id/textMonedaJapon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/moneda_japon"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textMonedaKorea"
+        />
+
+    <ImageView
+        android:layout_width="34dp"
+        android:layout_height="31dp"
+        android:src="@drawable/japanflag"
+        app:layout_constraintEnd_toStartOf="@+id/textMonedaJapon"
+        app:layout_constraintHorizontal_bias="0.911"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textMonedaJapon" />
+
+    <TextView
+        android:id="@+id/textMonedaCanada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/moneda_canada"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textMonedaJapon"
+        />
+
+    <ImageView
+        android:layout_width="34dp"
+        android:layout_height="31dp"
+        android:src="@drawable/canadaflag"
+        app:layout_constraintEnd_toStartOf="@+id/textMonedaCanada"
+        app:layout_constraintHorizontal_bias="0.911"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textMonedaCanada" />
+
+    <TextView
+        android:id="@+id/textMonedaSuiza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/moneda_suiza"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textMonedaCanada"
+        />
+
+    <ImageView
+        android:layout_width="34dp"
+        android:layout_height="31dp"
+        android:src="@drawable/switzerlandflag"
+        app:layout_constraintEnd_toStartOf="@+id/textMonedaSuiza"
+        app:layout_constraintHorizontal_bias="0.911"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textMonedaSuiza" />
+
+    <TextView
+        android:id="@+id/textMonedaNoruega"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/moneda_noruega"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textMonedaSuiza"
+        />
+
+    <ImageView
+        android:layout_width="34dp"
+        android:layout_height="31dp"
+        android:src="@drawable/norwayflag"
+        app:layout_constraintEnd_toStartOf="@+id/textMonedaNoruega"
+        app:layout_constraintHorizontal_bias="0.911"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textMonedaNoruega" />
+
+    <TextView
+        android:id="@+id/textMonedaSuecia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/moneda_suecia"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textMonedaNoruega"
+        />
+
+    <ImageView
+        android:layout_width="34dp"
+        android:layout_height="31dp"
+        android:src="@drawable/swedenflag"
+        app:layout_constraintEnd_toStartOf="@+id/textMonedaSuecia"
+        app:layout_constraintHorizontal_bias="0.911"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textMonedaSuecia" />
+
+    <TextView
+        android:id="@+id/textMonedaSingapur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/moneda_singapur"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textMonedaSuecia"
+        />
+
+    <ImageView
+        android:layout_width="34dp"
+        android:layout_height="31dp"
+        android:src="@drawable/singapurflag"
+        app:layout_constraintEnd_toStartOf="@+id/textMonedaSingapur"
+        app:layout_constraintHorizontal_bias="0.911"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textMonedaSingapur" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
