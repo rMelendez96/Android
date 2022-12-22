@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Latitud y Longitud</string>
+    <string name="title_activity_maps">Latitud y Longitud</string>
+    <string name="buttonGuardar">Guardar Latitud y Longitud</string>
+    <string name="buttonBorrar">Borrar Datos</string>
+</resources>
